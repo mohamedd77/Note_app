@@ -40,7 +40,6 @@ import com.fiel.note.ui.presentation.navigation.Screens
 fun HomeScreen(navController: NavHostController, viewModel: HomeViewModel = hiltViewModel()) {
     val notes = viewModel.notes.collectAsState(initial = emptyList())
 
-    // Color Palette
     val backgroundColor = Color(0xFFF0F0F0)
     val topBarColor = Color(0xFF6200EA)
     val fabColor = Color(0xFFFFC107)
@@ -65,7 +64,7 @@ fun HomeScreen(navController: NavHostController, viewModel: HomeViewModel = hilt
             }
         },
         modifier = Modifier
-            .background(backgroundColor) // Set background color for the whole screen
+            .background(backgroundColor) 
     ) { paddingValues ->
         LazyColumn(modifier = Modifier.padding(paddingValues)) {
             items(notes.value) {
