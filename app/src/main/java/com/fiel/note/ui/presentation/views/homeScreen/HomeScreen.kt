@@ -72,7 +72,7 @@ fun HomeScreen(navController: NavHostController, viewModel: HomeViewModel = hilt
                     modifier = Modifier
                         .padding(16.dp)
                         .border(1.dp, color = cardBorderColor)
-                        .background(Color.White) // Card background color
+                        .background(Color.White) 
                 ) {
                     Column(modifier = Modifier.padding(20.dp)) {
                         Row(
