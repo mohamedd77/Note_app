@@ -30,7 +30,7 @@ import androidx.navigation.NavHostController
 @Composable
 fun AddScreen(navController: NavHostController, viewModel: AddViewModel = hiltViewModel()) {
 
-    // Color Palette
+    
     val backgroundColor = Color(0xFFF5F5F5)
     val topBarColor = Color(0xFF6200EA)
     val buttonColor = Color(0xFFFFC107)
